@@ -9,12 +9,17 @@ const Frame = dynamic<Partial<FrameProps>>(() => import('framer').then((framer) 
 export default function Home() {
     return (
         <Layout title="Home">
-            <Page position="relative" minWidth="100%" height="500px">
+            <Heading text="New Testament" />
+            <Page position="relative" minWidth="100%" height="90vh">
                 <Frame>
-                    <Heading text="Hello World!" />
+
                 </Frame>
+            </Page>
+
+            <Heading text="Old Testament" />
+            <Page position="relative" minWidth="100%" height="90vh">
                 <Frame>
-                    <Heading text="Hello World Again!" />
+
                 </Frame>
             </Page>
         </Layout>
