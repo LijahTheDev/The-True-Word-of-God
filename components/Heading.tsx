@@ -5,6 +5,7 @@ import styled from 'styled-components'
 const Frame = dynamic<Partial<FrameProps>>(() => import('framer').then((framer) => framer.Frame), { ssr: false })
 
 const Container = styled(Frame)`
+    background-color: transparent !important;
     display: flex !important;
     justify-content: center;
     align-items: center;
@@ -23,7 +24,7 @@ interface Props {
 
 const Heading: React.FC<Props> = ({ text }) => {
     return (
-        <Container position="relative" minWidth="100%" height="70px" backgroundColor="lightgreen">
+        <Container position="relative" minWidth="100%" height="70px">
             <Text>{text}</Text>
         </Container>
     )

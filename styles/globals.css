@@ -15,3 +15,14 @@ a {
   box-sizing: border-box;
   margin: 0;
 }
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 1px solid transparent;
+}
